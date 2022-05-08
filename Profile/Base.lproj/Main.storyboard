@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCQ-xy-eXF">
+                                <rect key="frame" x="15" y="590" width="384" height="41"/>
+                                <string key="text">慶應義塾大学環境情報学部2年
+湘南学祭実行委員会</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jij-hY-JWj">
+                                <rect key="frame" x="15" y="787" width="384" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="caK-3D-D8s"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="Profile" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapProfile" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTT-bz-Crs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masashi Aso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C14-b9-SUz">
+                                <rect key="frame" x="15" y="538" width="384" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2022-03-20_FinalPresentation2022" translatesAutoresizingMaskIntoConstraints="NO" id="vkw-VN-HE6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vkw-VN-HE6" secondAttribute="height" multiplier="3166:4000" id="f9B-u5-tXK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C14-b9-SUz" secondAttribute="trailing" constant="15" id="1XJ-E8-xaX"/>
+                            <constraint firstItem="vkw-VN-HE6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3i1-8N-ueB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rCQ-xy-eXF" secondAttribute="trailing" constant="15" id="5nF-nl-CS0"/>
+                            <constraint firstItem="vkw-VN-HE6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7qS-QS-A2I"/>
+                            <constraint firstItem="C14-b9-SUz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="AsS-05-G6c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vkw-VN-HE6" secondAttribute="trailing" id="M3c-0p-zVY"/>
+                            <constraint firstItem="rCQ-xy-eXF" firstAttribute="top" secondItem="C14-b9-SUz" secondAttribute="bottom" constant="15" id="V7N-La-a9R"/>
+                            <constraint firstItem="C14-b9-SUz" firstAttribute="top" secondItem="vkw-VN-HE6" secondAttribute="bottom" constant="15" id="W5G-FH-Kyu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jij-hY-JWj" secondAttribute="bottom" constant="15" id="Ydc-MN-wyj"/>
+                            <constraint firstItem="jij-hY-JWj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rCQ-xy-eXF" secondAttribute="bottom" constant="15" id="jH6-Rj-IyO"/>
+                            <constraint firstItem="jij-hY-JWj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="n76-4r-VgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jij-hY-JWj" secondAttribute="trailing" constant="15" id="zLf-2Y-Aj8"/>
+                            <constraint firstItem="rCQ-xy-eXF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zPY-Ml-Ajf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="jij-hY-JWj" id="oFs-dy-nfM"/>
+                        <outlet property="descriptionLabel" destination="rCQ-xy-eXF" id="qbD-SS-wrn"/>
+                        <outlet property="imageView" destination="vkw-VN-HE6" id="EEu-Oq-Wlg"/>
+                        <outlet property="nameLabel" destination="C14-b9-SUz" id="QHl-dL-Y1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2022-03-20_FinalPresentation2022" width="3166" height="4000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
